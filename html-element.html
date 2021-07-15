@@ -106,10 +106,65 @@
     <br>
     <audio src="" controls="controls"></audio>
     <br>
+    <audio controls>
+        <source src="voice.ogg" type="audio/ogg">
+        <source src="voice.mp3" type="audio/mpeg">
+    </audio>
+    <br>
     <video src="" controls></video>
+    <br>
+    <video controls>
+        <source src="movie.mp4" type="video/mp4">
+        <source src="movie.ogg" type="video/ogg">
+    </video>
 
     <h2>-----</h2>
     <h1>表單</h1>
-    <form action="" method=""></form>
+    <h2>範例一</h2>
+    <form action="" method="">
+        <p>
+            <span>text</span>
+        </p>
+        <p>
+            <input type="text"><br>
+            <input type="text" placeholder="placeholder"><br>
+            <input type="text" value="value"><br>
+            <input type="password"><br>
+            <input type="password" placeholder="請輸入密碼">
+        </p>
+        <p>
+            <input type="reset" value="清除">
+            <input type="submit" value="送出">
+        </p>
+    </form>
+    <h2>範例二</h2>
+    <form action="" method="">
+        <input type="radio" name="animal" value="dog">狗<br>
+        <input type="radio" name="animal" value="cat">貓<br>
+        <input type="checkbox" name="big-animal" value="lion">獅子<br>
+        <input type="checkbox" name="big-animal" value="tiger">老虎<br>
+        <input type="checkbox" name="big-animal" value="bear">熊
+    </form>
+    <h2>範例三</h2>
+    <form action="" method="">
+        <p>
+            <select name="character">
+                <option value="null" selected>請選擇</option>
+                <option value="a">A</option>
+                <option value="b">B</option>
+                <option value="c">C</option>
+            </select>
+        </p>
+        <p>
+            <textarea name="text" placeholder="請輸入文字"></textarea>
+        </p>
+        <p>
+            <input type="button" value="input的button"><br>
+            <button type="button">button的button</button><br>
+            <button type="reset">button的reset</button><br>
+            <button type="submit">button的submit</button>
+        </p>
+    </form>
+    
 </body>
 </html>

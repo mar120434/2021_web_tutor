@@ -1,0 +1,15 @@
+#first {
+    background: #faa;
+}
+
+.second {
+    background-color: #ffaaaa;
+}
+
+.third {
+    background-color: rgba(255, 176, 176, 1);
+}
+
+.fourth {
+    background-color: rgba(255, 175, 175, 0.5);
+}
