@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Box Model</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+        .box {
+            width: 100px;
+            height: 100px;
+            background-color: #fcc;
+            border: 10px solid #faa;
+            overflow: hidden;
+        }
+        .box-margin {
+            margin: 10px 20px 30px 40px;
+        }
+        .box-padding {
+            padding: 40px 20px 30px 40px;
+        }
+    </style>
+</head>
+<body>
+    <div class="box">
+        若夫霪雨霏霏，連月不開；陰風怒號，濁浪排空；日星隱曜，山嶽潛形；商旅不行，檣傾楫摧；薄暮冥冥，虎嘯猿啼。登斯樓也，則有去國懷鄉，憂讒畏譏，滿目蕭然，感極而悲者矣。
+    </div>
+
+    <div class="box box-margin">
+        若夫霪雨霏霏，連月不開；陰風怒號，濁浪排空；日星隱曜，山嶽潛形；商旅不行，檣傾楫摧；薄暮冥冥，虎嘯猿啼。登斯樓也，則有去國懷鄉，憂讒畏譏，滿目蕭然，感極而悲者矣。
+    </div>
+
+    <div class="box box-padding">
+        若夫霪雨霏霏，連月不開；陰風怒號，濁浪排空；日星隱曜，山嶽潛形；商旅不行，檣傾楫摧；薄暮冥冥，虎嘯猿啼。登斯樓也，則有去國懷鄉，憂讒畏譏，滿目蕭然，感極而悲者矣。
+    </div>
+</body>
+</html>
