@@ -1,9 +1,11 @@
 #first {
     background: #faa;
+    color: blue;
 }
 
 .second {
     background-color: #ffaaaa;
+    font-size: 30px;
 }
 
 .third {
