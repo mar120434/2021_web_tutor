@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Display</title>
+    <style>
+        .box {
+            width: 150px;
+            height: 150px;
+            background-color: #000;
+            color: #fff;
+            margin: 20px;
+        }
+        .inline {
+            display: inline;
+        }
+        .block {
+            display: block;
+        }
+        .inline-block {
+            display: inline-block;
+        }
+        .none {
+            display: none;
+        }
+
+        .flex-box {
+            display: flex;
+            width: 500px;
+            height: 400px;
+            border: 1px solid #000;
+            margin: 20px;
+        }
+        .flex-align {
+            justify-content: center;
+            align-items: center;
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <div class="box">origin</div>
+    </div>
+
+    <div>
+        <div class="box inline">inline</div>
+        <div class="box inline">inline</div>
+    </div>
+    <div>
+        <div class="box block">block</div>
+        <div class="box block">block</div>
+    </div>
+    <div>
+        <div class="box inline-block">inline-block</div>
+        <div class="box inline-block">inline-block</div>
+        <div class="box inline-block">inline-block</div>
+    </div>
+    <div>
+        <div class="box none">none</div>
+    </div>
+
+    <div class="flex-box">
+        <div class="box"></div>
+        <div class="box"></div>
+    </div>
+
+    <div class="flex-box flex-align">
+        <div class="box"></div>
+        <div class="box"></div>
+    </div>
+</body>
+</html>
