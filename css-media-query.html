@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Media Query</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        .box-papa {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+        }
+
+        .box {
+            width: 10px;
+            height: 10px;
+            background-color: rgba(255, 0, 0, 0.3);
+        }
+
+        @media (min-width: 576px) { 
+            .box {
+                width: 50px;
+                height: 50px;
+                background-color: orange;
+            }
+        }
+        @media (min-width: 768px) { 
+            .box {
+                width: 100px;
+                height: 100px;
+                background-color: yellow;
+            }
+        }
+        @media (min-width: 992px) { 
+            .box {
+                width: 150px;
+                height: 150px;
+                background-color: green;
+            }
+        }
+        @media (min-width: 1200px) { 
+            .box {
+                width: 200px;
+                height: 200px;
+                background-color: blue;
+            }
+        }
+        @media (min-width: 1400px) { 
+            .box {
+                width: 250px;
+                height: 250px;
+                background-color: purple;
+            }
+        }
+
+        .col-6 {
+            width: 50%;
+        }
+
+        @media (min-width: 576px) { 
+            .col-sm-6 {
+                width: 50%;
+            }
+        }
+        @media (min-width: 768px) { 
+            .col-md-6 {
+                width: 50%;
+            }
+        }
+        @media (min-width: 992px) { 
+            .col-lg-6 {
+                width: 50%;
+            }
+        }
+        @media (min-width: 1200px) { 
+            .col-xl-6 {
+                width: 50%;
+            }
+        }
+        @media (min-width: 1400px) { 
+            .col-xxl-6 {
+                width: 50%;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="box-papa">
+        <div class="box"></div>
+    </div>
+</body>
+</html>
