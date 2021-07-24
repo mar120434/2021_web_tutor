@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Data Type</title>
+</head>
+<body>
+    
+    <script>
+        // primitives
+        let type_boolean = true;
+        let type_number = 123;
+        let type_string = "字串";
+        let type_undefined = undefined;
+        // 結果
+        console.log("-- primitives --");
+        console.log(type_boolean);
+        console.log(type_number);
+        console.log(type_string);
+        console.log(type_undefined);
+        console.log("-----");
+        console.log(typeof type_boolean);
+        console.log(typeof type_number);
+        console.log(typeof type_string);
+        console.log(typeof type_undefined);
+        console.log("-----");
+        
+        // Structural Types
+        let type_array = [1, 2, 3];
+        let type_object = {"key": "value", 1: 123, 2: "字串"};
+        let type_null = null;
+        // 結果
+        console.log("-- Structural Types --");
+        console.log(type_array);
+        console.log(type_object);
+        console.log(type_null);
+        console.log("-----");
+        console.log(typeof type_array);
+        console.log(typeof type_object);
+        console.log(typeof type_null);
+        console.log("-----");
+        
+        // 時間
+        let type_time = new Date(0);
+        console.log(type_time);
+        console.log(typeof type_time);
+        
+    </script>
+</body>
+</html>

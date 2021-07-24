@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Function</title>
+</head>
+<body>
+    <script>
+        let parameter1 = "啊啊啊啊啊"
+        let parameter2 = "喔喔喔喔喔"
+
+        function first(p){
+            // statements
+            console.log("-- first --");
+            console.log(p);
+            console.log("-----");
+        }
+        first(parameter1);
+
+        var second = function(p){
+            // statements
+            console.log("-- second --");
+            console.log(p);
+            console.log("-----");
+        };
+        second(parameter2);
+
+        let third = function(p1, p2){
+            // statements
+            console.log("-- third --");
+            console.log(p1);
+            console.log(p2);
+            console.log("-----");
+        }
+        third();
+
+        // Arrow Function
+        let arrowFunctionFirst = (p) => console.log(p);
+        let arrowFunctionSecond = (p) => {
+            console.log(p)
+        };
+        let arrowFunctionThird = p => console.log(p);
+        let arrowFunctionForth = p => { console.log(p) };
+        console.log("Arrow Funciton Result Here");
+        console.log("-- First --");
+        arrowFunctionFirst(parameter1);
+        console.log("-- Second --");
+        arrowFunctionSecond(parameter2);
+        console.log("-- Third --");
+        arrowFunctionThird(parameter1);
+        console.log("-- Forth --");
+        arrowFunctionForth(parameter2);
+    </script>
+</body>
+</html>
