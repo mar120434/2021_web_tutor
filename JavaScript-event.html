@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Event</title>
+</head>
+<body>
+    <div class="btn-area">
+        <input type="button" value="button1" onclick="alert('BTN1')">
+        <input type="button" value="button2" onclick="BTN2()">
+        <input type="button" value="button3" id="btn3">
+        <input type="button" value="button4" id="btn4">
+        <button onclick="BTN5()">button5</button>
+    </div>
+    
+
+    <script>
+        function BTN2(){
+            alert("BTN2");
+        }
+        function BTN3(){
+            alert("BTN3");
+        }
+        function BTN4(){
+            alert("BTN4");
+        }
+        function BTN5(){
+            alert("BTN5");
+        }
+
+        let btn3 = document.getElementById("btn3");
+        btn3.onclick = BTN3;
+
+        let btn4 = document.getElementById("btn4");
+        btn4.addEventListener("click", BTN4);
+    </script>
+</body>
+</html>
