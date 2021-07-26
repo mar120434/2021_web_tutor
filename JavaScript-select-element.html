@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Select Elements</title>
+</head>
+<body>
+    <div id="first">first</div>
+    <div class="second">second 1</div>
+    <div class="second">second 2</div>
+    <div name="third">third 1</div>
+    <div name="third">third 2</div>
+    
+    <script>
+        // document object
+        console.log("--document object--");
+        console.log(document.documentElement);
+        console.log(document.head);
+        console.log(document.body);
+        console.log(document.title);
+
+        // select element object
+        console.log("--id--");
+        console.log(document.getElementById("first"));
+        console.log("--class--");
+        console.log(document.getElementsByClassName("second"));
+        console.log(document.getElementsByClassName("second")[0]);
+        console.log(document.getElementsByClassName("second")[1]);
+        console.log("--name--");
+        console.log(document.getElementsByName("third"));
+        console.log(document.getElementsByName("third")[0]);
+        console.log(document.getElementsByName("third")[1]);
+        console.log("--tag--");
+        console.log(document.getElementsByTagName("div"));
+        console.log("--query selector--");
+        console.log(document.querySelector("div"));
+        console.log(document.querySelector("#first"));
+        console.log(document.querySelector(".second"));
+        console.log(document.querySelector("div[name=third]"));
+        console.log(document.querySelectorAll("div"));
+        console.log(document.querySelectorAll("#first"));
+        console.log(document.querySelectorAll(".second"));
+        console.log(document.querySelectorAll("div[name=third]"));
+    </script>
+</body>
+</html>

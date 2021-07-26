@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Control Elements</title>
+</head>
+<body>
+    <div id="first"></div>
+    <div class="second"></div>
+    <div class="second"></div>
+    <input type="button" id="third">
+
+    <ul id="ul-papa"></ul>
+
+    <script>
+        // change element content
+        let id = document.getElementById("first");
+        id.innerText = "first 的文字";
+        let class_array = document.getElementsByClassName("second");
+        class_array[0].innerText = "<span>second 1 的文字</span>";
+        class_array[1].innerHTML = "<span>second 2 的文字</span>";
+        let button = document.getElementById("third");
+        button.value = "按鈕文字";
+
+        // create element
+        let liA = document.createElement("li");
+        liA.innerHTML = "A";
+        let liB = document.createElement("li");
+        liB.innerHTML = "B";
+        let liC = document.createElement("li");
+        liC.innerHTML = "C";
+        let ul = document.getElementById("ul-papa");
+        ul.appendChild(liA);
+        ul.appendChild(liB);
+        ul.appendChild(liC);
+        console.log(ul);
+    </script>
+</body>
+</html>
