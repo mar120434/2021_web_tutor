@@ -14,6 +14,8 @@
 
     <ul id="ul-papa"></ul>
 
+    <div id="animal" class="dog"></div>
+
     <script>
         // change element content
         let id = document.getElementById("first");
@@ -36,6 +38,17 @@
         ul.appendChild(liB);
         ul.appendChild(liC);
         console.log(ul);
+
+        // set attribute
+        let animal = document.getElementById("animal");
+        console.log("get attr.");
+        console.log(animal.getAttribute("class"));
+        console.log("remove attr.");
+        animal.removeAttribute("class");
+        console.log(animal.getAttribute("class"));
+        console.log("set attr.");
+        animal.setAttribute("class", "cat");
+        console.log(animal.getAttribute("class"));
     </script>
 </body>
 </html>
