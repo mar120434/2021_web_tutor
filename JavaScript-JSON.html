@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JSON</title>
+</head>
+<body>
+    
+    <script>
+        let json_object = {
+            "employee":{
+                "name":"John",
+                "age":30,
+                "city":"New York",
+            }
+        };
+        console.log(json_object);
+
+        json_string = JSON.stringify(json_object);
+        console.log(json_string);
+
+        json_object = JSON.parse(json_string);
+        console.log(json_object);
+    </script>
+</body>
+</html>
