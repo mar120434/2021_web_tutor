@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ajax</title>
+</head>
+<body>
+    <button onclick="GETbtn()">GET按我</button>
+    <p id="get-para"></p>
+    <script>
+        function GETbtn(){
+            let xhr = new XMLHttpRequest();
+            xhr.open("GET", "example.json", true);
+            xhr.send();
+            xhr.onload = function () {
+                let para = document.getElementById("get-para");
+                console.log(xhr);
+                para.innerText = xhr.responseText;
+            }
+        }
+    </script>
+</body>
+</html>
