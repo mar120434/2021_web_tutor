@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Action</title>
+    <style>
+        .box {
+            width: 100px;
+            height: 100px;
+            background-color: yellow;
+        }
+        .green {
+            background-color: green;
+        }
+
+        .papa {
+            width: 100px;
+            height: 100px;
+        }
+        .purple {
+            width: 100px;
+            height: 100px;
+            background-color: purple;
+        }
+    </style>
+</head>
+<body>
+
+    <div>
+        <button class="alert-btn1">alert1</button>
+        <button class="alert-btn2">alert2</button>
+    </div>
+
+    <div class="box"></div>
+    <div>
+        <button class="add-class">add class</button>
+        <button class="remove-class">remove class</button>
+        <button class="toggle-class">toggle class</button>
+    </div>
+
+    <div class="papa">
+        <div class="purple"></div>
+    </div>
+    <div>
+        <button class="item-hidden">hidden</button>
+        <button class="item-show">show</button>
+        <button class="item-toggle">toggle</button>
+    </div>
+
+    <div>
+        <p id="para1"></p>
+        <p id="para2"></p>
+        <input type="button" id="value-btn">
+    </div>
+
+    <!-- jQuery cdn -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script>
+        // click 事件
+        $(".alert-btn1").click(function(){
+            alert("alert1");
+        });
+
+        function alertBTN2(){
+            alert("alert2");
+        }
+        $(".alert-btn2").click(alertBTN2);
+
+        // class 調整
+        $(".add-class").click(function(){
+            $(".box").addClass("green");
+        });
+        $(".remove-class").click(function(){
+            $(".box").removeClass("green");
+        });
+        $(".toggle-class").click(function(){
+            $(".box").toggleClass("green");
+        });
+
+        // element 出現或消失
+        $(".item-hidden").click(function(){$(".purple").hide();});
+        $(".item-show").click(function(){$(".purple").show();});
+        $(".item-toggle").click(function(){$(".purple").toggle();});
+
+        // 設定 Element 內容
+        $("#para1").text("<span>para1</span>");
+        $("#para2").html("<span>para2</span>");
+        $("#value-btn").val("value-btn");
+    </script>
+</body>
+</html>
