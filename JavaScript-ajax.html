@@ -17,7 +17,8 @@
             xhr.onload = function () {
                 let para = document.getElementById("get-para");
                 console.log(xhr);
-                para.innerText = xhr.responseText;
+                para.innerText += xhr.responseText;
+                para.innerHTML += '<br>';
             }
         }
     </script>
