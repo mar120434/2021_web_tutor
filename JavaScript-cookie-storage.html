@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cookie and Storage</title>
+</head>
+<body>
+    <script>
+        // cookie
+        document.cookie = "name1=value1";
+        document.cookie = "name2=value2";
+        console.log("cookie");
+        console.log(document.cookie);
+        
+        // sessionStorage
+        window.sessionStorage.setItem("key1", "value1");
+        window.sessionStorage.setItem("key2", "value2");
+        console.log("sessionStorage");
+        console.log(window.sessionStorage.getItem("key1"));
+        console.log(window.sessionStorage.getItem("key2"));
+        // sessionStorage.removeItem("key1");
+        // sessionStorage.clear();
+
+        // localStorage
+        window.localStorage.setItem("key3", "value3");
+        window.localStorage.setItem("key4", "value4");
+        console.log("localStorage");
+        console.log(window.localStorage.getItem("key3"));
+        console.log(window.localStorage.getItem("key4"));
+        localStorage.removeItem("key4");
+        localStorage.clear();
+    </script>
+</body>
+</html>
